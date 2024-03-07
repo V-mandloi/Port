@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "roboto";
+  src: url(/Fonts/L0xkDF4xlVMF-BfR8bXMIjDwjmqxf78.woff2);
+}
+@font-face {
+  font-family: "roboto2";
+  src: url(/Fonts/L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2);
+}
+.about-page-size {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: "roboto";
+}
+.about-page-size h1 {
+  font-family: "roboto";
+  font-size: 8vw;
+  font-weight: bold;
+  color: #17161f;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about-main-content {
+  width: 60%;
+  height: 75%;
+  position: absolute;
+  background: transparent;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  transform: translate(10%, 17%);
+  color: white;
+  line-height: 25px;
+  font-size: 16px;
+  overflow: hidden;
+  font-family: "roboto";
+}
+.about-main-content .para-animation {
+  opacity: 2;
+}
+.about-main-content .line {
+  color: red;
+  position: relative;
+  top: 0;
+  right: 475px;
+  transform: rotate(90deg);
+}
+.about-main-content p {
+  background-color: transparent;
+  font-family: "roboto";
+}
+.about-main-content p:hover {
+  background-color: rgb(35, 35, 35);
+}
+.about-main-content p .srNumber {
+  color: rgb(105, 105, 105);
+  font-family: "roboto2";
+}
+.about-main-content p .dot {
+  color: #3b3553;
+  font-family: "roboto2";
+}
+.about-main-content p .comment {
+  color: #78707e;
+  font-family: "roboto2";
+}
+.about-main-content p .blue {
+  color: #5918df;
+  font-family: "roboto2";
+}
+.about-main-content p .yellow {
+  color: #eeff31;
+  font-family: "roboto2";
+}
+.about-main-content p .red {
+  color: #e3244c;
+  font-family: "roboto2";
+}
+.about-main-content p .aqua {
+  color: #24e394;
+  font-family: "roboto2";
+}
+.about-main-content p .green {
+  color: #24e33a;
+  font-family: "roboto2";
+}
+.about-main-content p .orange {
+  color: #e39d24;
+  font-family: "roboto2";
+}
+
+@media screen and (max-width: 426px) {
+  .about-page-size::before {
+    transform: translate(62vw, 10vh) scale(2);
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  .about-page-size::before {
+    transform: translate(69vw, 10vh) scale(1.5);
+  }
+}/*# sourceMappingURL=about.css.map */

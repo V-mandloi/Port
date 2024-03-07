@@ -1,0 +1,275 @@
+{major mono display, megrim}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+  .first {
+    color: black;
+    position: absolute;
+    // left:0px;
+    top: 200px;
+  }
+  .second {
+    position: absolute;
+    right: 100;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    // transform: translate();
+  }
+}
+
+// .loader:nth-child(3) {
+// //   transform: translate(50vw, 0) rotate(22deg);
+//   position: absolute;
+//   animation: rotate 2s infinite alternate;
+// }var mouseclick = () => {
+//     var clickOnMouse = document.getElementsByClassName("scroller");
+//     console.log(clickOnMouse);
+//     clickOnMouse.addEventListener("click", () => {
+//         console.log("button was clicked");
+//         window.scrollBy(0, 50);
+//     });
+// }
+
+// @keyframes rotate {
+//   to {
+//     transform: rotate(45deg);
+//   }
+// }
+
+// .loader-container.hidden {
+//   opacity: 0;
+//   visibility: hidden;
+// }
+
+// #home {
+//   opacity: 0;
+//   transform: translate3d(0, -1rem, 0);
+// }
+
+// #home.visible {
+//   opacity: 1;
+//   transform: translate3d(0, 0, 0);
+// }
+
+/* loader css ends */
+
+
+// timeline 1 end
+
+// var t2 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".about-page-size",
+//     scroller: "body",
+//     // markers: true,
+//     start: "top 80%",
+//     scrub: 1,
+//     end: "top 40%",
+//   },
+// });
+// t2.to(
+//   ".about-page-size",
+//   {
+//     scale: 1,
+//   },
+//   "about"
+// );
+// t2.to("background-3d", {});
+// t2.to(".about-page-size::before", {
+//     scale:0.9,
+// }, "about")
+
+//timeline 2 ends
+
+// var t3 = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#home",
+//     scroller: "body",
+//     pin: true,
+//     // markers: true,
+//     // start: "top top",
+//     // end: "top 30%",
+//   },
+// });
+// // home page animation ends
+
+// t3.to(
+//   "#about",
+//   {
+//     y: -712,
+//   },
+//   "S"
+// );
+
+// t3.to(".about-page-size", {
+//     y: -712,
+//     scale:1,
+//     scrollTrigger: {
+//         trigger: ".about-page-size",
+//         scroller: "body",
+//         markers: true,
+//         start: "top 50%",
+//         scrub: true,
+//         end: "top 20%"
+//     }
+// }, "S")
+
+// t3.to(
+//   "#skills",
+//   {
+//     y: -712,
+//   },
+//   "S"
+// );
+
+// t3.to(var mouseclick = () => {
+//     var clickOnMouse = document.getElementsByClassName("scroller");
+//     console.log(clickOnMouse);
+//     clickOnMouse.addEventListener("click", () => {
+//         console.log("button was clicked");
+//         window.scrollBy(0, 50);
+//     });
+// }
+//   "#projects",
+//   {
+//     y: -712,
+//   },
+//   "S"
+// );
+
+// t3.to(
+//   "#contact",
+//   {
+//     y: -712,
+//   },
+//   "S"
+// );
+
+// pS1.to("#skills", {
+//     y : -712,
+
+//     scrollTrigger: {
+//         trigger: "#about",
+//         pin: true,
+//         markers: true,
+//         // start: "top 80%",
+//         // end: "top 30%",
+//     }
+// })
+// pS1.to("#projects", {
+//     y : -712,
+
+//     scrollTrigger: {
+//         trigger: "#skills",
+//         pin: true,
+//         markers: true,
+//         // start: "top 80%",
+//         // end: "top 30%",
+//     }
+// })
+// pS1.to("#contact", {
+//     y : -712,
+
+//     scrollTrigger: {
+//         trigger: "#projects",
+//         pin: true,
+//         markers: true,
+//         // start: "top 80%",
+//         // end: "top 30%",
+//     }
+// })
+
+//hhhhhhhhhhhhhhhhhhhh
+// pS1.from(".first", {
+//     x: -200,
+
+// }, "pS")
+// pS1.from(".second", {
+//     x: 200,
+
+// }, "pS")
+
+// opacity
+var mouseclick = () => {
+//     var clickOnMouse = document.getElementsByClassName("scroller");
+//     console.log(clickOnMouse);
+//     clickOnMouse.addEventListener("click", () => {
+//         console.log("button was clicked");
+//         window.scrollBy(0, 50);
+//     });
+// }
+// tl.from(".social-log0", {
+//     x: -200,
+//     ease: "power2.out",
+//     stagger: 0.1
+// })
+
+
+//     function scrollToSection(index) {
+
+//         // index hame currentSectionIndex se milega kyuki hame use function me call krte time as a parametere diya ahai esliye
+//         const sectionTop = sections[index].offsetTop;
+//         const sectionHeight = sections[index].clientHeight;
+
+//         /* sectionTop:  yaani section ka starting point.
+//         windowHeight: Window height, mtlb screen ki height.
+//         sectionHeight: Current section  height.*/
+
+//         //   innerHeight -->"veiwport" screen  height milti hai .
+//         const windowHeight = window.innerHeight;
+
+//         if (sectionHeight < windowHeight) {
+//             // If section height is less than window height, scroll to the center of the section
+//             const scrollTo = sectionTop - (windowHeight - sectionHeight) / 2;
+
+//             // { top: scrollTo, behavior: "smooth" }: Yeh batayega  kitna scroll karna hai, aur kaise karna hai.
+//             window.scrollTo({ top: scrollTo, behavior: "smooth" });
+//         } else {
+//             // If section height is greater than or equal to window height, scroll to the top of the section
+//             window.scrollTo({ top: sectionTop, behavior: "smooth" });
+//         }
+//     }
+// });
+
+// shweta code
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     // sare section ko select kiya &button ko
+//     const sections = document.querySelectorAll("section");
+//     const scrollButton = document.getElementById("scrollButton");
+
+//     let currentSectionIndex = 0;
+//     //   button par listener
+//     scrollButton.addEventListener("click", function () {
+
+//         // scrollToSection --> mtlb hai ki jo section mila hia use() use hisab se wo smoth scroll krega
+//         scrollToSection(currentSectionIndex);
+//         currentSectionIndex++;
+//         //   console.log(currentSectionIndex);
+//     });
+
+//     window.addEventListener("scroll", function () {
+//         // scrollPosition: kitna neeche scroll kiya hua hai secytion me.
+//         const scrollPosition = window.scrollY;
+//         /*   function(section, index) -> iteration mein section variable
+//           mein current section ayega, aur index mein us element ka index . */
+//         sections.forEach(function (section, index) {
+//             // sectionTop: kitni doori hai section ka top document ke top se.
+//             const sectionTop = section.offsetTop;
+//             const sectionBottom = sectionTop + section.clientHeight;
+//             /*  agr ye condition true huyi toh wo smj jayega ki hame cureent section me hi
+//              scroll krna hai abhi or agr glt hui toh next section me move kr degi*/
+
+//             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+//                 currentSectionIndex = index;
+//             }
+//         });
+//     });
